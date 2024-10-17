@@ -1,9 +1,8 @@
-import greeter from '.';
+import tailwindConfig from '.';
 
-describe('Test', () => {
-  it('greets', () => {
-    const name = 'Huey';
-    const result = greeter(name);
-    expect(result).toBe('Hello, Huey!');
+describe('Tailwind Preset', () => {
+  // TODO: Implement tests for Tailwind preset https://github.com/MetaMask/metamask-design-system/issues/48
+  it('should have a dummy test', () => {
+    expect(tailwindConfig).toBeDefined();
   });
 });
