@@ -67,7 +67,18 @@ module.exports = {
   },
   settings: {
     'import/resolver': {
-      typescript: {},
+      typescript: {
+        // Ensures imports are resolved correctly when using TypeScript e.g. @metamask/ packages.
+        project: './tsconfig.packages.json',
+        // Paths for module resolution to match TypeScript paths
+        paths: ['apps/*', 'packages/*'],
+      },
+      node: {
+        // Specify file extensions that ESLint should consider when resolving modules
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        // Include workspace directories to help ESLint resolve modules within these folders
+        paths: ['apps', 'packages'],
+      },
     },
     jsdoc: {
       mode: 'typescript',
