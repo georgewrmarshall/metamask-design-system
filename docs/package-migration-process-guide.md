@@ -86,7 +86,7 @@ This document outlines the process for migrating a MetaMask library into the met
 
 - Use the script to ensure that the tags have the correct package name prefixes.
 
-2. Create a fork of the metamask module template for testing, and push the ported tags to the test fork.
+2. Create a fork of the metamask design system for testing, and push the ported tags to the test fork.
 
 - **Do not run the script against `MetaMask/metamask-design-system` before testing it on a fork.**
 
